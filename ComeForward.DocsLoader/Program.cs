@@ -1,17 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using ComeForward.Domain;
 using ComeForwardLoader;
+using Microsoft.Extensions.Configuration;
+
+IConfiguration config = new ConfigurationBuilder()
+                .AddUserSecrets<Program>()
+                .Build();
+
 
 // path to repository (backwards works up from bin output directory)
-const string DocsPath = @"C:\Dev\Docs\EntityFramework.Docs-main\EntityFramework.Docs-main\entity-framework";
+string DocsPath = config["ComeForward:DocsPath"] ?? throw new ArgumentNullException("ComeForward:DocsPath");
 
 // Azure Cosmos DB endpoint, defaults to emulator
-const string EndPoint = "https://cosmos-db-hello-world.documents.azure.com:443/";
+string EndPoint = config["ComeForward:EndPoint"] ?? throw new ArgumentNullException("ComeForward:EndPoint");
 
 // Secret key for Azure Cosmos DB, defaults to emulator
-const string AccessKey = "RSNEuzV4H2nX2pWIuoyPRHZmzYm5UxMtf9gSKqQnqeAcOqF3mi1ELIzKWVm4BxPpYOlU9wZcHSVEACDb7cHsJA==";
+string AccessKey = config["ComeForward:AccessKey"] ?? throw new ArgumentNullException("ComeForward:AccessKey");
 
 // set to true to re-run tests without rebuilding db
 var testsOnly = false;
