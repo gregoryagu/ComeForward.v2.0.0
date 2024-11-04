@@ -5,9 +5,13 @@ VisualStudioVersion = 17.12.35424.110
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComeForward", "ComeForward\ComeForward.csproj", "{DA5D0BDD-6507-48DA-8366-178262F84917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain", "BlockChain\BlockChain.csproj", "{F593DA97-6217-4981-B055-7CD2062D521D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComeForward.BlockChain", "BlockChain\ComeForward.BlockChain.csproj", "{F593DA97-6217-4981-B055-7CD2062D521D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestBlockChain", "UnitTestBlockChain\UnitTestBlockChain.csproj", "{B3A216A6-7180-4779-8BC3-7CF6E24FEC11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComeForward.BlockChain.UnitTests", "UnitTestBlockChain\ComeForward.BlockChain.UnitTests.csproj", "{B3A216A6-7180-4779-8BC3-7CF6E24FEC11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComeForward.DataLoader", "DataService\ComeForward.DataLoader.csproj", "{BECC3635-D426-4CAA-B621-B4D899B0B8F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComeForward.Domain", "ComeForward.Domain\ComeForward.Domain.csproj", "{319FB65E-19F1-47E7-A72A-F04E5A8F02C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{B3A216A6-7180-4779-8BC3-7CF6E24FEC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3A216A6-7180-4779-8BC3-7CF6E24FEC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3A216A6-7180-4779-8BC3-7CF6E24FEC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECC3635-D426-4CAA-B621-B4D899B0B8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECC3635-D426-4CAA-B621-B4D899B0B8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECC3635-D426-4CAA-B621-B4D899B0B8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECC3635-D426-4CAA-B621-B4D899B0B8F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319FB65E-19F1-47E7-A72A-F04E5A8F02C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319FB65E-19F1-47E7-A72A-F04E5A8F02C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319FB65E-19F1-47E7-A72A-F04E5A8F02C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319FB65E-19F1-47E7-A72A-F04E5A8F02C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
