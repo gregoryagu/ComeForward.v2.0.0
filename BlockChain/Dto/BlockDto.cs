@@ -1,16 +1,16 @@
 ﻿using BlockChain.Utility;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Text.Json;
 
 
 namespace BlockChain.Dto
 {
     public class BlockDto
     {
-        //Node should be unique in the block chain thats why there is no setter
+        // Node should be unique in the block chain that's why there is no setter
         public string Node { get { return Guid.NewGuid().ToString(); } }
-        //TimeStamp is for when the block is created
+        // TimeStamp is for when the block is created
         public DateTime TimeStamp { get { return DateTime.Now; } }
         public string Data { get; set; }
         public string PreviousHash { get; set; }
@@ -19,13 +19,13 @@ namespace BlockChain.Dto
 
         public string CalculateHash()
         {
-            return HashGenerator.CalculateHash($"{this.Node} + {this.PreviousHash} + {this.TimeStamp} + {JsonConvert.SerializeObject(this.Data) + this.Nonce}");
+            return HashGenerator.CalculateHash($"{this.Node} + {this.PreviousHash} + {this.TimeStamp} + {JsonSerializer.Serialize(this.Data) + this.Nonce}");
         }
-        
-        public void mineBlock(int diffculty)
+
+        public void mineBlock(int difficulty)
         {
             this.Hash = CalculateHash();
-            while(this.Hash.Substring(0,diffculty) != "0".PadLeft(diffculty,'0'))
+            while (this.Hash.Substring(0, difficulty) != "0".PadLeft(difficulty, '0'))
             {
                 this.Nonce++;
                 this.Hash = this.CalculateHash();
@@ -34,7 +34,7 @@ namespace BlockChain.Dto
     }
     public class BlockChainDto
     {
-        //When ever the new BlockChainDto will be initialize the first Genesis object will be add automaticatally
+        // Whenever the new BlockChainDto is initialized, the first Genesis object will be added automatically
         public BlockChainDto()
         {
             BlockDto GenesisBlock = new BlockDto();
