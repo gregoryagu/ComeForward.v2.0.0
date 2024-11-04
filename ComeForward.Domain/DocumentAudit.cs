@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json;
 
-namespace PlanetaryDocs.Domain
+namespace ComeForward.Domain
 {
     /// <summary>
     /// Represents a snapshot of the document.

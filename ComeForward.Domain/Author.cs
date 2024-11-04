@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PlanetaryDocs.Domain
+namespace ComeForward.Domain
 {
     /// <summary>
     /// A document author.

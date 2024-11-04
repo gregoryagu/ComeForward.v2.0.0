@@ -1,4 +1,4 @@
-﻿namespace PlanetaryDocs.Domain
+﻿namespace ComeForward.Domain
 {
     /// <summary>
     /// The result of a validation.

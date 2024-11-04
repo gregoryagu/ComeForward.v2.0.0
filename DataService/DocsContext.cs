@@ -6,10 +6,10 @@ using Microsoft.Azure.Cosmos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 //using Newtonsoft.Json;
-using PlanetaryDocs.Domain;
+using ComeForward.Domain;
 
 
-namespace PlanetaryDocs.DataAccess
+namespace ComeForward.DataAccess
 {
     /// <summary>
     /// <see cref="DbContext"/> implementation for Planetary Docs.

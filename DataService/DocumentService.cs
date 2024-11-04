@@ -5,9 +5,9 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.Azure.Cosmos;
 using Microsoft.EntityFrameworkCore;
-using PlanetaryDocs.Domain;
+using ComeForward.Domain;
 
-namespace PlanetaryDocs.DataAccess
+namespace ComeForward.DataAccess
 {
     /// <summary>
     /// Data access implementation.

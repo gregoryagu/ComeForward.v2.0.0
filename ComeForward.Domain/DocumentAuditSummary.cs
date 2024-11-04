@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PlanetaryDocs.Domain
+namespace ComeForward.Domain
 {
     /// <summary>
     /// Simple class representing a document snapshot.

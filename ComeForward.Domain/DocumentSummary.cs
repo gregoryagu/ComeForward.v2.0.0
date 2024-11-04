@@ -1,4 +1,4 @@
-﻿namespace PlanetaryDocs.Domain
+﻿namespace ComeForward.Domain
 {
     /// <summary>
     /// Represents a summary of a document.

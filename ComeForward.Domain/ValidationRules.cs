@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace PlanetaryDocs.Domain
+namespace ComeForward.Domain
 {
     /// <summary>
     /// Validation rules for the project.

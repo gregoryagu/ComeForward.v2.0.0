@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace PlanetaryDocs.Domain
+namespace ComeForward.Domain
 {
     /// <summary>
     /// Data service definition.
