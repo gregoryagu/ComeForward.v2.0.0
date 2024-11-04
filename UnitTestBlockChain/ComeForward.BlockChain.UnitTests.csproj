@@ -84,9 +84,9 @@
     <Compile Include="UnitTestBlockChainRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BlockChain\BlockChain.csproj">
+    <ProjectReference Include="..\BlockChain\ComeForward.BlockChain.csproj">
       <Project>{f593da97-6217-4981-b055-7cd2062d521d}</Project>
-      <Name>BlockChain</Name>
+      <Name>ComeForward.BlockChain</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
