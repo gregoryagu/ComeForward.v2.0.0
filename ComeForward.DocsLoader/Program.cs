@@ -15,7 +15,7 @@ IConfiguration config = new ConfigurationBuilder()
 string DocsPath = config["ComeForward:DocsPath"] ?? throw new ArgumentNullException("ComeForward:DocsPath");
 
 // Azure Cosmos DB endpoint, defaults to emulator
-string EndPoint = config["ComeForward:EndPoint"] ?? throw new ArgumentNullException("ComeForward:EndPoint");
+string EndPoint = config["ComeForward:EndPointUri"] ?? throw new ArgumentNullException("ComeForward:EndPointUri");
 
 // Secret key for Azure Cosmos DB, defaults to emulator
 string AccessKey = config["ComeForward:AccessKey"] ?? throw new ArgumentNullException("ComeForward:AccessKey");
